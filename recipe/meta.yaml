@@ -1,4 +1,4 @@
-{% set version = '0.3.1' %}
+{% set version = "0.3.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bigparallelr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bigparallelr/bigparallelr_{{ version }}.tar.gz
-  sha256: c3c4642ad4b60995ed0a3a7061af79691f41bfed5fc1f670d19385dab7c23691
+  sha256: 5a3312699fdf6521e982b6fce844977dd7e9c3188354a7c3106c24495e643393
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -49,12 +49,10 @@ test:
 about:
   home: https://github.com/privefl/bigparallelr
   license: GPL-3.0-only
-  summary: Utility functions for easy parallelism in R. Include some reexports from other packages,
-    utility functions for splitting and parallelizing over blocks, and choosing and
-    setting the number of cores used.
+  summary: Utility functions for easy parallelism in R. Include some reexports from other packages, utility functions for splitting and parallelizing over blocks, and choosing and setting the number of cores used.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
