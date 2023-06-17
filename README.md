@@ -1,11 +1,11 @@
-About r-bigparallelr
-====================
+About r-bigparallelr-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bigparallelr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/privefl/bigparallelr
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bigparallelr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Utility functions for easy parallelism in R. Include some reexports from other packages, utility functions for splitting and parallelizing over blocks, and choosing and setting the number of cores used.
 
